@@ -3,7 +3,7 @@ import semmle.javascript.security.dataflow.Xss
 import semmle.javascript.frameworks.AngularJS.ServiceDefinitions
 import semmle.javascript.frameworks.AngularJS.AngularJSCore
 
-from AngularScope scope, Variable sce, DataFlow::SourceNode step1, DataFlow::FunctionNode step2, DataFlow::SourceNode scopeSource
+from  Variable sce, DataFlow::SourceNode step1, DataFlow::FunctionNode step2, DataFlow::SourceNode scopeSource
 where 
 sce.getName() = "$sce" 
 and
