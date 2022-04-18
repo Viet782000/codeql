@@ -692,7 +692,8 @@ private class BuiltinServiceCall extends AngularJSCall {
 
   override predicate interpretsArgumentAsHtml(Expr e) {
     exists(ServiceReference service, string methodName |
-      service.getName() = "$sce" and
+      service.getName() = "$sce" 
+      and
       call = service.getAMethodCall(methodName)
     |
       // specialized call
